@@ -21,12 +21,15 @@ Run on Each Node
     server_ids = Enum.map(nodes, fn(x) -> {:quick_start, x} end)
 
 Start on node 1
+
     :ra.start()
 
 Start on node 2
+
     :ra.start()
 
 Start on node 3
+
     :ra.start()
 
 Start Cluster On Node 2
@@ -48,7 +51,7 @@ Add to state machine
 
     {:ok, new_result, leader_id_1} = :ra.process_command(leader_id, 7)
 
-Join Cluster 
+Join Cluster
 
     Add member
 
